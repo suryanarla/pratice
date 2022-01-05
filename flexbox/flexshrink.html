@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex {
+        display: flex;
+      }
+      .flex div {
+        border: 2px solid red;
+        padding: 1%;
+        margin: 1%;
+        width: 200px;
+      }
+
+      .div2 {
+        /* width: 200px; */
+        flex-shrink: 2;
+      }
+      .div3 {
+        flex-shrink: 1;
+      }
+      .div4 {
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+      <div class="div3">3</div>
+      <div class="div4">4</div>
+      <div class="div5">5</div>
+    </div>
+  </body>
+</html>
